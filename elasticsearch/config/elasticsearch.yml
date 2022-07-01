@@ -1,0 +1,18 @@
+cluster.name: es-cluster
+node.name: es-node1
+node.master: true
+node.data: true
+network.host: 0.0.0.0
+network.publish_host: 127.0.0.1
+http.port: 9200
+transport.port: 9300
+# 集群发现
+#discovery.seed_hosts:- 本机外网ip
+# 手动指定可以成为 mater 的所有节点的 name 或者 ip，这些配置将会在第一次选举中进行计算
+#cluster.initial_master_nodes:- es-node1
+# 支持跨域访问
+#http.cors.enabled: true
+#http.cors.allow-origin: "*"
+# 安全认证
+#xpack.security.enabled: false
+#http.cors.allow-headers: "Authorization"
